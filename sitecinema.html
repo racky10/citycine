@@ -10,61 +10,200 @@
 </head>
 
 <body>
-    <header class="entete">
+    <header>
         <a href="#" class="logo">
             <img class="logo" src="logo.jpg" alt="logo">
         </a>
-
-        <ul class="navbar">
-            <li><a href="#accueil" class="accueil-active">accueil</a></li>
-            <li><a href="#Apropos">A propos</a></li>
-            <li><a href="#Films">Nos Films</a></li>
-            <li><a href="#Evenements">Nos Evenements</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-        <a href="#" class="bouton">s'abonner</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#accueil" class="accueil-active">accueil</a></li>
+                <li><a href="#Apropos">A propos</a></li>
+                <li><a href="#Films">Nos Films</a></li>
+                <li><a href="#Evenements">Nos Evenements</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
     </header>
-    </--accueil-->
+    <!-- accueil-->
     <section class="accueil" id="accueil">
         <div class="image-contener">
-            <img src="image2.jpg" alt="background-image2" class="background">
-            <img src="image.png" alt="center-image" class="centered">
-        </div>
-        </div> image2.jpg" alt="">
-        <img src="image.jpg" alt=""></div>
-        <img src="téléchargement (13).jpeg" alt="">
-        <img src="images (23).jpeg" alt="">
-        <img src="images (38).jpeg" alt="">
-        <img src="téléchargement (27).jpeg" alt="">
-        <img src="images (21).jpeg" alt="">
-    </section>
-    <section class="Apropos" id="Apropos">
-        <h1>A propos</h1>
-        <p>Bienvenue sur <span>CityCine</span>, votre destination ultime pour tout ce qui
-            touche au cinéma !
-            Passionnés
-            par le septième art, nous avons créé ce site pour rassembler les amateurs de films, quils soient fans de
-            blockbusters, curieux de cinéma indépendant, ou nostalgiques des classiques.
+            <img src="image.png" alt="" class="background">
 
-            Notre mission est simple : vous offrir une expérience immersive autour du cinéma. Nous vous tenons informés
-            des dernières sorties, des horaires de séances, et des événements exclusifs, tout en vous proposant des
-            critiques détaillées et des analyses passionnantes sur vos films préférés.
-        </p>
-        <h2>Nos productions</h2>
-        <p>Action
-            Comédie
-            Drame
-            Science-fiction
-            Documentaires
-            Romance
-            Thriller
-            Fantastique
-            Animation
+        </div>
+        <img src="image.jpg" alt="">
+        <div class="image-accueil">
+            <img src="téléchargement (13).jpeg" alt="" class="image">
+            <img src="images (23).jpeg" alt="" class="image">
+            <img src="images (38).jpeg" alt="" class="image">
+            <img src="téléchargement (27).jpeg" alt="" class="image">
+            <img src="images (21).jpeg" alt="" class="image">
+        </div>
+    </section><br><br><br>
+    <section class="Apropos" id="Apropos">
+        <div class="gauche">
+            <p>
+            <h2>Nos productions </h2>
+            Action <br>
+            Comédie <br>
+            Drame <br>
+            Science-fiction <br>
+            Documentaires <br>
+            Romance <br>
+            Thriller <br>
+            Fantastique <br>
+            Animation <br>
             Horreur
-        </p>
-        <img src="image-apropos1.jpeg" alt="image-apropos1">
-        <img src="image.png" alt="image-apropos2">
+            </p><br>
+            <img src="image-apropos1.jpeg" alt="" class="img1-apropos">
+        </div>
+        <div class="droite">
+            <p>
+            <h1>A propos</h1><br>
+            Bienvenue sur CityCine, votre destination ultime pour tout ce qui touche au <br> cinéma ! Passionnés par
+            le septième art, nous avons créé ce site pour <br> rassembler les amateurs de films, qu’ils soient fans
+            de blockbusters, <br>curieux de cinéma indépendant, ou nostalgiques des classiques.<br><br>
+
+            Notre mission est simple : vous offrir une expérience immersive autour du <br>cinéma. Nous vous tenons
+            informés des dernières sorties, des horaires de <br>séances, et des événements exclusifs, tout en vous
+            proposant des critiques<br> détaillées et des analyses passionnantes sur vos films préférés.
+            </p> <br>
+            <img src="image.png" alt="" class="img-apropos">
+        </div>
     </section>
+    <section class="Films" id="Films">
+        <img src="téléchargement (11).jpg" alt="" class="img1-films"> <br>
+        <p class="text-film" id="text1-fims"> Action <br>
+            Comédie <br>
+            Drame <br>
+            Science-fiction <br>
+            Documentaires <br>
+            Romance <br>
+            Thriller <br>
+            Fantastique <br>
+            Animation <br>
+            Horreur</p><br><br><br>
+        <div class="contener-films">
+            <img src="téléchargement.jpg" alt="" class="div-films">
+            <video autoplay loop muted playsinline class="div-films">
+                <source src="spderman.mp4" type="video/mp4">
+            </video>
+            <img src="téléchargement (1).jpg" alt="" class="div-films">
+            <video autoplay loop muted playsinline class="div-films">
+                <source src="horreur.mp4" type="video/mp4">
+            </video>
+            <img src="téléchargement (40).jpg" alt="" class="div-films">
+            <img src="images (21).jpg" alt="" class="div-films">
+        </div>
+    </section>
+    <section class="Evenements" id="Evenements">
+        <div class="div-ev">
+            <div class="texth-ev">
+                <p class="paragraphe">Lundi - <br>Films d’Action<br> & Aventure
+                </p>
+                <img src="téléchargement (3).jpg" alt="" class="images-ev" id="lundi">
+
+            </div>
+            <div class="texth-ev">
+                <p class="paragraphe">Mardi - <br>Comédies
+                </p>
+                <img src="5308737.jpg" alt="" class="images-ev" id="mardi">
+
+            </div>
+            <div class="texth-ev">
+                <p class="paragraphe">Mercredi -<br> Films pour<br> Enfants et <br>Familles
+                </p>
+                <img src="téléchargement (42).jpeg" alt="" class="images-ev">
+
+            </div>
+            <div class="texth-ev">
+                <p class="paragraphe">Jeudi - <br>Drames et <br>Films d’Auteur
+                </p>
+                <img src="images (42).jpeg" alt="" class="images-ev" id="jeudi">
+
+            </div>
+            <div class="texth-ev">
+                <p class="paragraphe">Samedi -<br> Blockbusters <br>& Avant-<br>Premières
+                </p>
+                <img src="téléchargement (4).jpg" alt="" class="images-ev">
+
+            </div>
+            <div class="texth-ev">
+                <p class="paragraphe">Dimanche -<br> Films Romantiques<br> ou Historiques
+                </p>
+                <img src="images (38).jpeg" alt="" class="images-ev" id="dimanche">
+
+            </div>
+        </div>
+
+        <div class="textb-ev">
+            <ul>
+                <li>
+                    <p class="paragraphe2"> Super Mario Bros: Le Film<br>
+                        Crazy Rich Asians<br>
+                        Qu'est-ce qu'on a encore <br>fait au Bon Dieu ?</p>
+                </li>
+                <li>
+                    <p class="paragraphe2">
+                        Mission: Impossible - <br>Dead Reckoning<br>
+                        Mad Max: Fury Road<br>
+                        Top Gun: Maverick</p>
+                </li>
+                <li>
+                    <p class="paragraphe2"> Encanto<br>
+                        La Reine des Neiges II<br>
+                        Paddington 2<br>
+                    </p>
+                </li>
+                <li>
+                    <p class="paragraphe2"> Les Misérables (2019) <br>
+                        La La Land<br>
+                        Parasite</p>
+                </li>
+                <li>
+                    <p class="paragraphe2"> Avatar: La Voie de l'Eau<br>
+                        Avengers: Endgame<br>
+                        The Batman (2022)</p>
+                </li>
+                <li>
+                    <p class="paragraphe2"> Titanic<br>
+                        Orgueil et Préjugés (2005)<br>
+                        Les Évadés</p>
+                </li><br>
+            </ul>
+        </div>
+    </section> <br><br><br><br>
+    <section class="contact" id="contact">
+        <h3 class="titre-contact">contactez CityCine</h3> <br> <br>
+        <div class="num"> <img src="téléchargement (12) 1.png" alt="" class="img-contact"><br> <br>
+            <p class="titre-contact">contactez-nous <br>
+                par telephone </p><br><br>
+            <p style="color: black;">Rapide et efficace,pour <br> toute demande,n’esitez <br> pas à nous appelez au
+                <br><br>
+            <p> +22390511900</p>
+            </p>
+        </div>
+        <div class="email">
+            <img src="téléchargement (23) 2.png" id="img-em" class="img-contact" alt="">
+            <p class="titre-contact">E-mail</p><br><br>
+            <p> citycine25@gmail.com</p>
+        </div>
+        <p class="ouverture">ouvert <br>
+            24h/24</p>
+        <footer>
+            <p id="signature">©CityCine.com2025 “votre passion notre ecran”</p>
+            <div class="footer">
+                <h4>Retrouvez-nous sur</h4>
+                <img src="images (1) 1.png" alt="" class="icon">
+                <img src="téléchargement (5) 1.png" alt="" class="icon">
+                <img src="téléchargement (6) 1.png" alt="" class="icon">
+                <img src="téléchargement (10) 1.png" alt="" class="icon">
+                <img src="" alt="">
+            </div>
+        </footer>
+    </section>
+
 </body>
 
 </html>

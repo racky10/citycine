@@ -5,17 +5,19 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    text-transform: capitalize;
     scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-
+    scroll-behavior: smooth
 }
 
 body {
+    min-height: 100vh;
     background: var(--text-color);
     color: var(--bg-color);
+    background-color: rgb(255, 255, 255);
 }
 
-.entete {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,88 +27,325 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px 7%;
     background: #410101;
     transition: 0.5s;
     height: 70px;
-
 }
 
-.navbar {
-    display: flex;
-    margin-top: 0%;
-    column-gap: 5rem;
-
-
-}
-
-ul li {
-    list-style: none;
-}
-
-.navbar li {
-    position: relative;
-}
-
-.navbar a {
-    color: white;
-    font-weight: 500;
-    padding: 10px;
-    font-size: 1.5rem;
-
-}
-
-.navbar a ::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: white;
-    bottom: -4px;
-    left: 0;
-    transition: 0.4s all linear;
-
-
-}
-
-.navbar a :hover ::after,
-.navbar .accueil-active ::after {
-    width: 100%;
-}
-
-.logo {
-    font-size: 20px;
+header .logo {
+    width: 110px;
+    height: auto;
+    font-size: 25px;
     font-weight: 600;
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+}
+
+header .navbar ul {
+    list-style: none;
+    /*display: flex;
+    margin-top: 0%;
+    column-gap: 5rem;*/
+
 
 }
 
-header img {
-    width: 100px;
-    height: auto;
+header .navbar ul li {
+    position: relative;
+    float: left;
 }
 
-.bouton {
-    padding: 0.7rem 1.4rem;
-    background: var(--main-color);
-    color: var(--bg-color);
-    font-weight: 400;
-    border-radius: 0.5rem;
+header .navbar ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 40px;
+    font-size: 1.5rem;
+    display: block;
 }
 
-.bouton :hover {
-    background: #000;
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        display: none;
+        background: #ffffff;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    #menu-bar :checked~.navbar ul {
+        display: initial;
+
+    }
+}
+
+/*header .navbar ul li a:hover ::after,
+.navbar .accueil-active ::after {
+    width: 100%;
+}*/
+
+
+
+
+
+.image-contener .background {
+    width: 600px;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px rgba(0, 0, 0, 2);
+    margin-left: 25rem;
+    margin-top: 20rem;
+    height: 300px;
+
+
+
+
+}
+
+.accueil {
+    background-image: url(image2.jpg);
+    background-size: cover;
+
+
 }
 
 .image-accueil {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px rgba(0, 0, 0, 2);
+    display: flex;
+    gap: 100px;
+    margin-bottom: 35px;
+    margin-right: 40px;
+
+
 }
 
-body {
-    background-color: rgb(255, 255, 255);
+.image {
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.centered {
+    width: 450px;
+    height: 400px;
+    align-items: center;
+}
+
+.Apropos {
+    height: 700px;
+    /* la longueur*/
+    text-align: center;
+}
+
+h1 {
+    margin-right: 6rem;
+}
+
+.gauche {
+    float: left;
+    margin-left: 50px;
+
+}
+
+.img1-apropos {
+    height: 300px;
+    width: 500px;
+}
+
+.droite {
+    float: right;
+}
+
+.img-apropos {
+    height: 300px;
+    width: 700px;
+}
+
+/*films styles*/
+.Films {
+    background-color: black;
+}
+
+.text-film {
+    color: white;
+}
+
+.img1-films {
+    float: left;
+    height: 301px;
+    width: 211px;
+    /la largeur/
+}
+
+.contener-films {
+    display: flex;
+    gap: 30px;
+}
+
+.div-films {
+    height: 261px;
+    width: 300px;
+    margin-top: 2rem;
+
+}
+
+/*Evenements style*/
+.Evenements {
+    background-image: url(image-ev.png);
+    background-size: contain;
+
+}
+
+.div-ev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /*l'espace entre les image*/
+
+}
+
+.texth-ev {
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 26rem;
+
+}
+
+#mardi {
+    margin-top: 40px;
+    /*pour pousser vers le bas ou en haut avec des valeures negatives*/
+}
+
+.texth-ev img {
+    width: 200px;
+    height: 280px;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.texth-ev:hover img {
+    transform: scale(1.08);
+    /*zoom sur l'image au suvol*/
+
+}
+
+
+.div-ev {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.textb-ev ul {
+    display: flex;
+    background-color: white;
+    gap: 60px;
+
+
+}
+
+/*CONTACT*/
+.num {
+    float: left;
+    margin-left: 50px;
+}
+
+.email {
+    margin-left: 550px;
+    /*pour pousser l'image de gauche vers la droite*/
+
+}
+
+.ouverture {
+    margin-left: 1005px;
+    margin-top: -17rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.img-concact {
+    margin-top: -2rem;
+}
+
+
+
+h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: white;
+    height: 70px;
+}
+
+.contact {
+    background-color: #7D0D0D;
+    height: 800px;
+
+
+}
+
+.titre-contact {
+    font-size: 2rem;
+}
+
+.contact p {
+    color: #ffffff;
+}
+
+.footer {
+    float: right;
+    /*vers la droite*/
+    margin-top: -11rem;
+}
+
+
+#signature {
+    margin-top: 32rem;
+    /*pour faire descendre*/
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5rem;
+    /*la taille d'un texte*/
+
+}
+
+.text-contact {
+    color: black;
+}
+
+#img-em {
+    margin-left: 5px;
 }
